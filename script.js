@@ -76,9 +76,9 @@ const mathQuestions = [
 let flag=0;
 let num=0;
 function put_value(flag) {
-      
+       console.log(flag);
        flag<=0?prevBtn.disabled=true:prevBtn.disabled=false
-       flag>=10?nextBtn.disabled=true:nextBtn.disabled=false
+       flag>=9?nextBtn.disabled=true:nextBtn.disabled=false
 
       que.innerHTML=mathQuestions[flag].questionText;
       option_div.forEach((op,i)=>{
